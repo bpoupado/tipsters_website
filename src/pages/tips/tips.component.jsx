@@ -16,7 +16,7 @@ function Tips() {
     const [rendering, setRendering] = useState(true);
 
     const fetchTips = async () => {
-        const data = await fetch('http://localhost/api/tips.php');
+        const data = await fetch('https://tipsters.digitalwizard.pt/react/api/tips.php');
         console.log(data);
         const tips = await data.json();
         setTips(tips);

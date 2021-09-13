@@ -18,7 +18,7 @@ function NewsDetails({match}) {
 
     useEffect(() => {
         const fetchNewsDetails = async () => {
-            const data = await fetch(`http://localhost/api/news.php?id=${match.params.id}`);
+            const data = await fetch(`https://tipsters.digitalwizard.pt/react/api/news.php?id=${match.params.id}`);
             const news_details = await data.json();
             setNewsDetails(news_details);
             setRendering(false);

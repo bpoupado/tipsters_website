@@ -17,7 +17,7 @@ function News() {
     const [rendering, setRendering] = useState(true);
 
     const fetchNews = async () => {
-        const data = await fetch('http://localhost/api/news.php');
+        const data = await fetch('https://tipsters.digitalwizard.pt/react/api/news.php');
         console.log(data);
         const news = await data.json();
         setNews(news);

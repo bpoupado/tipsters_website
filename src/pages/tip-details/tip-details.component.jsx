@@ -20,7 +20,7 @@ function TipDetails({match}) {
 
     useEffect(() => {
         const fetchNewsDetails = async () => {
-            const data = await fetch(`http://localhost/api/tips.php?id=${match.params.id}`);
+            const data = await fetch(`https://tipsters.digitalwizard.pt/react/api/tips.php?id=${match.params.id}`);
             const tip_details = await data.json();
             console.log(tip_details);
             setTipDetails(tip_details);
