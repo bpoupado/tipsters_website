@@ -1,0 +1,49 @@
+.tip-versus {
+    margin: 0px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.tip-team-name {
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.tip-score {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 600px) {
+
+    .tip-team-logo {
+        width: 55px;
+    }
+
+}
+
+.tip-analysis {
+    font-size: 1.1em;
+}
+
+.tip-details-title {
+    padding-bottom: 15px;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.tip-section-spacing {
+    margin-top: 25px;
+}
+
+.tip-details-counter {
+    font-size: 1.2em;
+}
+
+.tip-details-body{
+    align-items: center;
+    padding: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 6px #ccc;
+}

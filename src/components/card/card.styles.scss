@@ -1,0 +1,18 @@
+$primary-color: #2EC663;
+$primary-color-hover: #007F21;
+
+@media only screen and (max-width: 650px) {
+    .comp-table .rank {
+        text-align: center;
+    }
+}
+
+.comp-table-body tr:nth-child(-n +3) .rank{
+    color: #fff;
+    background-color: $primary-color;
+}
+
+.comp-table-body tr:nth-child(4) .rank, .comp-table-body tr:nth-child(5) .rank{
+    color: #fff;
+    background-color: $primary-color-hover;
+}

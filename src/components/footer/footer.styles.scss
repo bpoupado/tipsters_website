@@ -1,0 +1,33 @@
+$secondary-color: #0C0F16;
+$primary-color: #2EC663;
+$primary-color-hover: #007F21;
+
+.section-divider {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.section-divider-top {
+    margin-top: 50px;
+}
+
+.footer-container {
+    background-color: $secondary-color;
+    padding: 25px;
+    text-align: center;
+}
+
+.footer-links {
+    color: #fff;
+    padding-top: 25px;
+    font-size: 18px;
+
+    .nav-link {
+        color: #fff;
+
+        &:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+}

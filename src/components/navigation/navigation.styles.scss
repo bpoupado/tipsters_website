@@ -1,0 +1,40 @@
+
+.menu-bar {
+    box-shadow: 1px 1px 6px #ccc;
+}
+
+.division-padding {
+    margin-top: 150px;
+}
+
+.bg-dark {
+    background-color: #0C0F16!important;
+}
+
+.navbar-dark .navbar-nav .menu-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    font-weight: 600;
+    font-size: 1.2em;
+    padding: 0 30px 0 30px!important;
+    color: #fff;
+
+    &:hover {
+        color: #2EC663;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navbar-dark .navbar-nav .nav-link {
+        font-size: 1.8em!important;
+    }
+}
+
+.brand-logo {
+    padding: 10px;
+}
+
+.menu-link:hover {
+    text-decoration: none!important;
+}
