@@ -62,11 +62,10 @@ class App extends Component {
   render() {
 
     return(
-      <Router>
+      <Router basename="/tipsters_website">
           <Navigation/>
           <Switch>
-            <Route path="/tipsters_website/" exact component={Homepage} />
-            <Route path="/" exact component={Homepage} />
+            <Route path={'/'} exact component={Homepage} />
             <Route path="/news" exact component={ News } />
             <Route path="/news/:id" component={ NewsDetails } />
             <Route path="/tips" exact component={ Tips } />
