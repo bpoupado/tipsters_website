@@ -10,6 +10,7 @@ import NewsDetails from './pages/news-details/news-details.component.jsx';
 import TipDetails from './pages/tip-details/tip-details.component.jsx';
 import About from './pages/about/about.component.jsx';
 import Homepage from './pages/homepage/homepage.component.jsx';
+import Error404 from './pages/error-pages/error-404.component';
 
 // import { CardList } from './components/card-list/card-list.component.jsx';
 
@@ -64,13 +65,15 @@ class App extends Component {
       <Router>
           <Navigation/>
           <Switch>
+            <Route path="/tipsters_website/" exact component={Homepage} />
             <Route path="/" exact component={Homepage} />
-            <Route path="" exact component={Homepage} />
             <Route path="/news" exact component={ News } />
             <Route path="/news/:id" component={ NewsDetails } />
             <Route path="/tips" exact component={ Tips } />
-            <Route path="/tip/:id" component={ TipDetails } />
-            <Route path="/about" component={ About } />
+            <Route path="/tip/:id" exact component={ TipDetails } />
+            <Route path="/about" exact component={ About } />
+            <Route path="/error404" exact component={Error404} />
+            <Route path="*" component={Error404} />
           </Switch>
           <Footer/>
       </Router>
