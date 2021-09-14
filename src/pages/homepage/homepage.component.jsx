@@ -14,7 +14,6 @@ function Homepage() {
                 <div className="col-md-12 text-center">
                     <h1 className="under-construction-title">Welcome to TipstersWebsite</h1>
                     <p>Let the games begin!</p>
-                    <p>Added another p tag</p>
                 </div>
             </div>
             <div className="row">
