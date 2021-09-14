@@ -1,7 +1,4 @@
 {
-
-  "homepage": "https://bpoupado.github.io/tipsters_website",
-
   "name": "tipsterswebsite",
 
   "version": "0.1.0",
@@ -42,7 +39,7 @@
 
     "predeploy": "npm run build",
 
-    "deploy": "gh-pages -d build",
+    "deploy": "git push heroku master",
 
     "start": "react-scripts start",
 

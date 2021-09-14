@@ -60,7 +60,6 @@ class App extends Component {
   // }
 
   render() {
-
     return(
       <Router>
         <Navigation/>
@@ -69,7 +68,7 @@ class App extends Component {
           <Route path="/news" exact component={ News } />
           <Route path="/news/:id" component={ NewsDetails } />
           <Route path="/tips" exact component={ Tips } />
-          <Route path="/tip/:id" exact component={ TipDetails } />
+          <Route path="/tip/:id" component={ TipDetails } />
           <Route path="/about" exact component={ About } />
           <Route path="/error404" exact component={Error404} />
           <Route path="*" component={Error404} />
