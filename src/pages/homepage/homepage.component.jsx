@@ -13,7 +13,7 @@ function Homepage() {
             <div className="row">
                 <div className="col-md-12 text-center">
                     <h1 className="under-construction-title">Welcome to TipstersWebsite</h1>
-                    <p>Let the games begin!</p>
+                    <p>Let the gamess begin!</p>
                 </div>
             </div>
             <div className="row">
