@@ -62,19 +62,19 @@ class App extends Component {
   render() {
 
     return(
-      <Router basename="/tipsters_website">
-          <Navigation/>
-          <Switch>
-            <Route path={'/'} exact component={Homepage} />
-            <Route path="/news" exact component={ News } />
-            <Route path="/news/:id" component={ NewsDetails } />
-            <Route path="/tips" exact component={ Tips } />
-            <Route path="/tip/:id" exact component={ TipDetails } />
-            <Route path="/about" exact component={ About } />
-            <Route path="/error404" exact component={Error404} />
-            <Route path="*" component={Error404} />
-          </Switch>
-          <Footer/>
+      <Router>
+        <Navigation/>
+        <Switch>
+          <Route path="/" exact component={Homepage} />
+          <Route path="/news" exact component={ News } />
+          <Route path="/news/:id" component={ NewsDetails } />
+          <Route path="/tips" exact component={ Tips } />
+          <Route path="/tip/:id" exact component={ TipDetails } />
+          <Route path="/about" exact component={ About } />
+          <Route path="/error404" exact component={Error404} />
+          <Route path="*" component={Error404} />
+        </Switch>
+        <Footer/>
       </Router>
     )
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Redirect } from 'react-router';
+import { Redirect, useParams } from 'react-router';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 import LoadingIcon from '../../components/loading-icon/loading-icon.component';
@@ -13,21 +13,23 @@ import Bookmaker from '../../components/bookmaker/bookmaker.component';
 import './tip-details.styles.scss';
 
 
-function TipDetails({match}) {
+function TipDetails() {
+
+    const { id } = useParams();
 
     const [tip_details, setTipDetails] = useState([]);
     const [rendering, setRendering] = useState(true);
 
     useEffect(() => {
         const fetchNewsDetails = async () => {
-            const data = await fetch(`https://tipsters.digitalwizard.pt/react/api/tips.php?id=${match.params.id}`);
+            const data = await fetch(`https://tipsters.digitalwizard.pt/react/api/tips.php?id=${id}`);
             const tip_details = await data.json();
             console.log(tip_details);
             setTipDetails(tip_details);
             setRendering(false);
         }
-        fetchNewsDetails(match.params.id);
-    },[match.params.id]);
+        fetchNewsDetails(id);
+    },[id]);
 
     if(!rendering){
         if(tip_details['errors']){
